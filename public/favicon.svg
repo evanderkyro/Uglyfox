@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" fill="#0D0D0D"/>
+  <rect x="4" y="4" width="56" height="56" fill="#FFD60A" stroke="#0D0D0D" stroke-width="3"/>
+  <!-- Left Ear -->
+  <polygon points="10,10 26,20 14,32" fill="#0D0D0D"/>
+  <polygon points="13,14 22,20 15,27" fill="#E6007A"/>
+  <!-- Right Ear -->
+  <polygon points="54,10 38,20 50,32" fill="#0D0D0D"/>
+  <polygon points="51,14 42,20 49,27" fill="#E6007A"/>
+  <!-- Geometric Fox Snout & Head -->
+  <polygon points="14,24 50,24 54,38 32,54 10,38" fill="#FFFFFF" stroke="#0D0D0D" stroke-width="3" stroke-linejoin="miter"/>
+  <!-- Forehead Wedge -->
+  <polygon points="22,24 42,24 32,37" fill="#FFD60A" stroke="#0D0D0D" stroke-width="2.5"/>
+  <!-- Left Eye -->
+  <rect x="18" y="30" width="7" height="5" fill="#0D0D0D"/>
+  <rect x="20" y="31" width="2" height="2" fill="#FFD60A"/>
+  <!-- Right Eye -->
+  <rect x="39" y="30" width="7" height="5" fill="#0D0D0D"/>
+  <rect x="42" y="31" width="2" height="2" fill="#FFD60A"/>
+  <!-- Nose Diamond -->
+  <polygon points="32,42 38,47 32,53 26,47" fill="#E6007A" stroke="#0D0D0D" stroke-width="2.5"/>
+</svg>

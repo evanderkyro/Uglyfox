@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-safety-yellow: #FFD60A;
+  --color-hot-magenta: #E6007A;
+  --color-concrete: #EDEDED;
+  --color-ink-black: #0D0D0D;
+  --color-paper-white: #FFFFFF;
+  --color-surface-canvas: #FCF9F8;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: #FCF9F8;
+    color: #0D0D0D;
+    font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  * {
+    border-color: #0D0D0D;
+  }
+
+  button:not(:disabled),
+  a[href] {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 3px solid #0D0D0D;
+    outline-offset: 2px;
+  }
+}
+
+.brutal-card {
+  background-color: #FFFFFF;
+  border: 3px solid #0D0D0D;
+  box-shadow: 6px 6px 0px #0D0D0D;
+  border-radius: 0px;
+}
+
+.brutal-card-concrete {
+  background-color: #EDEDED;
+  border: 3px solid #0D0D0D;
+  box-shadow: 6px 6px 0px #0D0D0D;
+  border-radius: 0px;
+}
+
+.brutal-card-yellow {
+  background-color: #FFD60A;
+  border: 3px solid #0D0D0D;
+  box-shadow: 6px 6px 0px #0D0D0D;
+  border-radius: 0px;
+}
+
+.brutal-card-interactive {
+  background-color: #FFFFFF;
+  border: 3px solid #0D0D0D;
+  box-shadow: 6px 6px 0px #0D0D0D;
+  border-radius: 0px;
+  transition: transform 100ms ease-out, box-shadow 100ms ease-out, background-color 100ms ease-out;
+}
+
+.brutal-card-interactive:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px #0D0D0D;
+}
+
+.brutal-btn {
+  border: 3px solid #0D0D0D;
+  box-shadow: 6px 6px 0px #0D0D0D;
+  border-radius: 0px;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  transition: transform 100ms ease-out, box-shadow 100ms ease-out, background-color 100ms ease-out;
+}
+
+.brutal-btn:hover:not(:disabled) {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px #0D0D0D;
+}
+
+.brutal-btn:active:not(:disabled) {
+  transform: translate(6px, 6px);
+  box-shadow: 0px 0px 0px #0D0D0D;
+}
+
+.brutal-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  box-shadow: 3px 3px 0px #0D0D0D;
+}
+
+.brutal-btn-sm {
+  border: 3px solid #0D0D0D;
+  box-shadow: 3px 3px 0px #0D0D0D;
+  border-radius: 0px;
+  font-family: "Space Mono", ui-monospace, monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: transform 100ms ease-out, box-shadow 100ms ease-out, background-color 100ms ease-out;
+}
+
+.brutal-btn-sm:hover:not(:disabled) {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #0D0D0D;
+}
+
+.brutal-btn-sm:active:not(:disabled) {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px 0px #0D0D0D;
+}
+
+.brutal-input {
+  background-color: #FFFFFF;
+  color: #0D0D0D;
+  border: 3px solid #0D0D0D;
+  border-radius: 0px;
+  transition: box-shadow 100ms ease-out;
+}
+
+.brutal-input:focus {
+  outline: none;
+  box-shadow: 4px 4px 0px #0D0D0D;
+}
+
+.brutal-chip {
+  border: 2px solid #0D0D0D;
+  box-shadow: 3px 3px 0px #0D0D0D;
+  border-radius: 0px;
+  font-family: "Space Mono", ui-monospace, monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.label-caps {
+  font-family: "Space Mono", ui-monospace, monospace;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brutal-btn,
+  .brutal-btn-sm,
+  .brutal-card-interactive,
+  .brutal-input {
+    transition: none;
+  }
+}
